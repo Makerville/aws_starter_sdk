@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.cdt.debug.gdbjtag.launchConfigurationType">
-<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.connection" value="gdb:%7C%20python%20wmsdk/tools/OpenOCD/openocd.py#"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.connection" value="gdb:%7C%20python%20sdk/tools/OpenOCD/openocd.py#"/>
 <intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.delay" value="3"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doHalt" value="true"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doReset" value="true"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
-<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value="source wmsdk/tools/OpenOCD/gdbcommands&#10;&#10;monitor reset halt&#10;monitor chip_fixup&#10;&#10;set remote hardware-breakpoint-limit 6&#10;set remote hardware-watchpoint-limit 4&#10;&#10;mem 0x1F000000 0x1FFFFFFF ro nocache&#10;set mem inaccessible-by-default off"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value="source sdk/tools/OpenOCD/gdbcommands&#10;&#10;monitor reset halt&#10;monitor chip_fixup&#10;&#10;set remote hardware-breakpoint-limit 6&#10;set remote hardware-watchpoint-limit 4&#10;&#10;mem 0x1F000000 0x1FFFFFFF ro nocache&#10;set mem inaccessible-by-default off"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDevice" value="OpenOCD (via pipe)"/>
 <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
